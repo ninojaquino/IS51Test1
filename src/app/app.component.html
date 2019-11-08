@@ -1,7 +1,7 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <mat-toolbar color="primary" class="main-nav">
   <button mat-raised-button [routerLink]="['/orders']" routerLinkActive="active">Orders</button>
-  <button mat-raised-button>Help</button>
+  <button mat-raised-button (click)="showHelpText()">Help</button>
 </mat-toolbar>
 <div class="main-grid">
   <div class="left-sidebar"></div>

@@ -8,7 +8,7 @@ import { FlexModalService } from './shared-components/flex-modal/flex-modal.serv
 })
 export class AppComponent implements OnInit {
   title = 'final';
-  aboutText: string;
+  aboutText = 'Created by Nino Jesus Aquino. (C) 2019';
   constructor(private flexModal: FlexModalService) {
 
   }
@@ -16,5 +16,9 @@ export class AppComponent implements OnInit {
   ngOnInit() {
   }
 
+  showHelpText() {
+    this.flexModal.openDialog('about-modal');
+    // alert('This application is made by Nino Aquino c. 2019');
+}
 
 }
